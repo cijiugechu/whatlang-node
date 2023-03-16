@@ -4,14 +4,12 @@ import { detectLang } from '../index'
 
 const input = `If loaders are the workhorse for file transformations (preprocessing)`
 
-
-
 async function run() {
   await b.suite(
     'detect language',
 
     b.add('LanguageDetect', () => {
-      const lngDetector = new LanguageDetect();
+      const lngDetector = new LanguageDetect()
 
       lngDetector.detect(input)
     }),
