@@ -1,5 +1,6 @@
 import b from 'benny'
 import LanguageDetect from 'languagedetect'
+
 import { detectLang } from '../index'
 
 const input = `If loaders are the workhorse for file transformations (preprocessing)`
