@@ -11,7 +11,7 @@
   "files": [
     "whatlang-node.linux-arm64-gnu.node"
   ],
-  "description": "Template project for writing node package with napi-rs",
+  "description": "Rust whatlang binding",
   "keywords": [
     "napi-rs",
     "NAPI",
@@ -28,7 +28,7 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "repository": "git@github.com:napi-rs/package-template.git",
+  "repository": "https://github.com/cijiugechu/whatlang-node",
   "libc": [
     "glibc"
   ]

@@ -9,13 +9,13 @@ async function run() {
   await b.suite(
     'detect language',
 
-    b.add('LanguageDetect', () => {
+    b.add('languagedetect', () => {
       const lngDetector = new LanguageDetect()
 
       lngDetector.detect(input)
     }),
 
-    b.add('whatlang', () => {
+    b.add('whatlang-node', () => {
       detectLang(input)
     }),
 
