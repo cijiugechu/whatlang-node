@@ -1,6 +1,6 @@
 {
   "name": "whatlang-node",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Rust whatlang binding",
   "main": "index.js",
   "repository": "https://github.com/cijiugechu/whatlang-node",
