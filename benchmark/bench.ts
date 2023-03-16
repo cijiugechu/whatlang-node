@@ -1,21 +1,23 @@
 import b from 'benny'
+import LanguageDetect from 'languagedetect'
+import { detectLang } from '../index'
 
-import { plus100 } from '../index'
+const input = `If loaders are the workhorse for file transformations (preprocessing)`
 
-function add(a: number) {
-  return a + 100
-}
+
 
 async function run() {
   await b.suite(
-    'Add 100',
+    'detect language',
 
-    b.add('Native a + 100', () => {
-      plus100(10)
+    b.add('LanguageDetect', () => {
+      const lngDetector = new LanguageDetect();
+
+      lngDetector.detect(input)
     }),
 
-    b.add('JavaScript a + 100', () => {
-      add(10)
+    b.add('whatlang', () => {
+      detectLang(input)
     }),
 
     b.cycle(),

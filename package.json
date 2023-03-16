@@ -1,5 +1,5 @@
 {
-  "name": "@napi-rs/package-template",
+  "name": "whatlang-node",
   "version": "1.0.0",
   "description": "Template project for writing node package with napi-rs",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "index.js"
   ],
   "napi": {
-    "name": "package-template",
+    "name": "whatlang-node",
     "triples": {
       "defaults": true,
       "additional": [
@@ -71,6 +71,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
+    "languagedetect": "^2.0.0",
     "lint-staged": "^13.1.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.3",
