@@ -4,11 +4,24 @@
 
 Fastest language detector in Node.js
 
-## Usage
+## API
 
 ```typescript
 export function detectLang(input: string, iso6393?: boolean | undefined | null): string
 export function detectScript(input: string): string
+```
+
+## Usage
+
+```js
+import { detectLang, detectScript } from 'whatlang-node'
+
+console.log(detectLang('This is a test.')) // 'English'
+
+// Convert into ISO 639-3.
+console.log(detectLang('这是测试', true)) // 'cmn'
+
+console.log(detectScript('This is a test')) // 'Latin'
 ```
 
 ## Support matrix
